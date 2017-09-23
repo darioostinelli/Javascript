@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Home Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="functions.js"></script>
+</head>
+
+<body>
+    <div class="contentPreview" style="display: block" id="mercurio">
+       <div class="content">
+            <a href="#">Scopri di piu'</a>
+       </div>
+    </div>
+     <div class="contentPreview" id="venere">
+        <div class="content">
+            <a href="#">Scopri di piu'</a>
+       </div>
+    </div>
+    <div class="contentPreview" id="marte">
+        <div class="content">
+            <a href="#">Scopri di piu'</a>
+       </div>
+    </div>
+    <div class="contentPreview" id="giove">
+        <div class="content">
+            <a href="#">Scopri di piu'</a>
+       </div>
+    </div>
+    <div class="contentPreview" id="saturno">
+        <div class="content">
+            <a href="#">Scopri di piu'</a>
+       </div>
+    </div>
+    <div class="mainMenu">
+        <div class="menuItem" style="background: #33aaff;" onclick=showPreview("mercurio");>Mercurio</div>
+        <div class="menuItem" onclick=showPreview("venere");>Venere</div>
+        <div class="menuItem"  onclick=showPreview("marte");>Marte</div>
+        <div class="menuItem" onclick=showPreview("giove");>Giove</div>
+        <div class="menuItem" onclick=showPreview("saturno");>Saturno</div>
+    </div>
+
+<div id="btnTop">Scroll top</div>
+<div class="textContent">
+    <h1>Sistema Solare</h1>
+    Il sistema solare e' il sistema planetario costituito da una varieta' di corpi celesti mantenuti
+    in orbita dalla forza di gravita' del Sole; vi appartiene anche la Terra.<br>
+    E' costituito, oltre che dal Sole, da otto pianeti (quattro pianeti rocciosi interni e quattro giganti gassosi esterni),
+    dai rispettivi satelliti naturali, da cinque pianeti nani e da miliardi di corpi minori.
+    Quest'ultima categoria comprende gli asteroidi, in gran parte ripartiti fra due cinture asteroidali
+    (la fascia principale e la fascia di Kuiper), le comete (prevalentemente situate nell'ipotetica nube di Oort),
+    i meteoroidi e la polvere interplanetaria.
+</div>
+<div class="parallax infoContainer" style="background-image: url(img/background/sole.jpg)">
+    <div class="infoRow">
+        <div class="info">
+           <div class="textContent black">
+                <h1 class="title">Mercurio</h1>
+                <b>Distanza dal Sole:</b> 57.910.000 km<br>
+                <b>Raggio:</b> 2440 km <br>
+                <b>Periodo di rivoluzione:</b> 88 gg <br>
+                <b>Gravita':</b>3.7 m/s^2
+           </div>
+        </div>
+        <div class="info">
+           <div class="textContent red">
+                <h1 class="title">Venere</h1>
+                <b>Distanza dal Sole : </b> 108.200.000 km<br>
+                <b>Raggio : </b> 6052 km <br>
+                <b>Periodo di rivoluzione : </b> 225 gg <br>
+                <b>Gravita' : </b>8.87 m/s^2
+           </div>
+         </div>
+    </div>
+    <div class="infoRow">
+        <div class="info">
+            <div class="textContent green">
+                <h1 class="title">Giove</h1>
+                <b>Distanza dal Sole : </b> 816.081.455 km<br>
+                <b>Raggio : </b> 71.492 km <br>
+                <b>Periodo di rivoluzione : </b> 11.86 anni <br>
+                <b>Gravita' : </b> 23.12  m/s^2
+           </div>
+        </div>
+        <div class="info">
+            <div class="textContent blue">
+                <h1 class="title">Saturno</h1>
+                <b>Distanza dal Sole : </b>1.503.983.449 km<br>
+                <b>Raggio : </b> 58.232  km <br>
+                <b>Periodo di rivoluzione : </b> 29 anni <br>
+                <b>Gravita' : </b>8.96  m/s^2
+           </div>
+         </div>
+        
+    </div>
+</div>
+<div class="textContent">
+    <h1>Sistema Solare Interno</h1>
+    Il sistema solare interno e' la parte interna del Sistema solare, cioè lo spazio che va dal Sole alla cintura asteroidale.<br>
+    Esso e' costituito, oltre che dal Sole, dai quattro pianeti terrestri: Mercurio, Venere, la Terra con la Luna e Marte, con i suoi
+    due piccoli satelliti Phobos e Deimos. Si tratta di corpi composti per lo più di silicati nella crosta e metalli nel nucleo,
+    hanno al massimo un paio di satelliti naturali, nessun anello planetario e sono compresi in una regione il cui diametro e'
+    inferiore alla distanza tra Giove e Saturno.<br>
+    Sono ancora in corso studi sulla regione compresa tra Mercurio ed il Sole.
+</div>
+<div class="parallax textContent" style="background-image: url(img/background/asteroidi.jpg); height: 200px">
+   
+</div>
+<div class="textContent">
+    <h1>Sistema Solare Esterno</h1>
+    Il sistema solare esterno e' la parte del sistema solare compresa tra la fascia principale degli asteroidi e la nube di Oort.<br>
+    Ne facevano parte convenzionalmente solo i quattro pianeti giganti gassosi (Giove, Saturno, Urano e Nettuno) con i loro satelliti
+    e una serie di corpi minori presenti in questa zona, ma ora vi vengono inclusi anche oggetti al di la' dell'orbita di Nettuno,
+    come alcuni pianeti nani (su tutti Plutone, un tempo considerato anch'esso pianeta esterno) e gli oggetti per l'appunto
+    transnettuniani, oltre anche ad alcune comete a corto periodo (come la cometa di Halley).
+</div>
+
+<div class="footer">
+    Ostinelli Dario - Sistema Solare 2017
+</div>
+</body>
+</html>

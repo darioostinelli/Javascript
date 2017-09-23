@@ -1,0 +1,179 @@
+/*****         MOBILE           ****/
+body{
+    margin:0;
+    background: #222222;
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+.mainMenu{
+    position: relative;
+}
+.menuItem{
+    display: block;
+    padding: 20px 30px;
+    background: #151515;
+    
+}
+.menuItem:hover{
+    background: #080808;
+    
+}
+.contentPreview{
+    display: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: #222222;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-size:cover;
+    
+}
+#mercurio{
+    background-image: url("img/background/mercurio.jpg");
+}
+
+#venere{
+    background-image: url("img/background/venere.png");
+}
+
+#marte{
+    background-image: url("img/background/marte.jpg");
+}
+
+#giove{
+    background-image: url("img/background/giove.jpg");
+}
+
+#saturno{
+    background-image: url("img/background/saturno.jpg");
+}
+.contentPreview .content{
+    position: absolute;
+    left: 45%;
+    top: 60px;
+}
+.content a{
+    width: 100%;
+    border: 3px solid white;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.content a:hover{
+    background: white;
+    color: #222222;
+}
+#btnTop{
+    background: #33aaff;
+    padding: 20px 10px;
+    border-radius: 30px;
+    color: white;
+    position: fixed;
+    right:30px;
+    bottom:30px;
+    cursor: pointer;
+    z-index: 99;
+}
+#btnTop:hover{
+    background: #2299ee;
+    
+}
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+.textContent{
+    padding: 30px;
+    text-align: justify;
+    font-size: 15px;
+}
+.textContent h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    margin: 30px;
+}
+.black{
+    color: black;
+}
+.red{
+    color: #ff3333;
+}
+.green{
+    color: #228822;
+}
+.blue{
+    color: #3333ff;
+}
+h1.title{
+    margin-left: 0;
+    text-align: left;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+h1.text{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+.info{
+    padding: 10px;
+    opacity: 0.5;
+    background: #efefef;
+    border-radius: 10px;
+    color: black;
+    display: block;
+    margin: 40px;
+}
+.info:hover{
+    opacity: 1;
+}
+
+.infoContainer{
+     display:  table;
+     border-collapse:separate;
+     table-layout: relative;
+     width: 100%;
+     border-spacing: 50px;
+}
+.footer{
+    background: #151515;
+    font-size: 13px;
+    text-align: center;
+    padding: 80px;
+}
+/***            DESKTOP         ***/
+@media only screen and (orientation: landscape) {
+.mainMenu{
+    
+    display:  table;
+    table-layout: relative;
+    width: 100%;
+}
+.menuItem{
+    display: table-cell;
+}
+.parallax {
+    height: 500px;
+}
+.infoRow {
+    display:table-row;
+}
+.info{
+    padding: 10px;
+    opacity: 0.5;
+    background: #efefef;
+    border-radius: 10px;
+    color: black;
+    display: table-cell;
+}
+}
