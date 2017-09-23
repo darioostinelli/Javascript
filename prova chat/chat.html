@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Chat</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="functions.js"></script>
+    <script>
+        var roomName = '';
+        var lastTs= -1;
+        verifyChat();
+        $().ready(function(){
+            $("#newMessage").keyup(function(event){
+                if(event.keyCode == 13){
+                $("#sendMessage").click();
+            }
+        });
+        })
+    </script>
+</head>
+
+<body>
+<div id="messages">
+    
+</div>
+<div id="inputs">
+    <input type="text" id="newMessage" placeholder="Write here..."/>
+    <input type="button" id="sendMessage" value="Send" onclick="sendMessage()"/>
+</div>
+
+</body>
+</html>

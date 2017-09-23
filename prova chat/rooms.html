@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Room List</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="functions.js"></script>
+    <script>
+        verifyAuth();
+        var list = [];
+        var myRoom = {};
+        $('#roomList').ready(getRoomList());
+        
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <div class="headerButton" onclick="showHideMenu();">
+            <img id="toggleMenu" class="icon" src="img/icons/hide.svg"/>
+        </div>
+        <div id="userInfo">
+            <img id="profilePicture" class="icon profilePicutre" src="img/icons/profilePlacheholder.svg"/>
+            <a href="index.html"></a>
+            <img id="logout" class="icon"src="img/icons/logout.svg" onclick="performLogout();"/>
+        </div>
+    </div>
+    <div id="menu">
+        <a class="menuItem " href="index.html">Account</a>
+        <a class="menuItem selected" href="#">Rooms List</a>
+        <a class="menuItem" href="newRoom.html">Create Room</a>
+    </div>
+    <div id="pageBody">
+        <div class="infoContainer">
+            <h1>My Room</h1>
+            <table id="myRoom" class="roomList">
+                <tr style="background: white">
+                    <th>Room Name<th>Admin User</th>
+                </tr>
+            </table>
+        </div>
+        <div class="infoContainer">
+            <h1>Rooms List</h1>
+            <table id="roomList" class="roomList">
+                <tr style="background: white">
+                    <th>Room Name<th>Admin User</th>
+                </tr>
+            </table>
+            <span id="accessRoomError"></span>
+        </div>
+        
+    </div>
+</body>
+</html>
+

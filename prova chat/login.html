@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="functions.js"></script>
+    <script>
+         $().ready(function(){
+            $("#loginUser, #loginPassword").keyup(function(event){
+                if(event.keyCode == 13){
+                $("#loginSubmit").click();
+            }
+        });
+        })
+    </script>
+</head>
+
+<body>
+<div id="loginForm">
+    <div>
+        <h1>Login</h1>
+    </div>
+    <div class="formBody">
+        <!-- body of the form -->
+        Username<input id="loginUser" type="text" class="formField" placeholder="Username"\><br>
+        Password<input id="loginPassword" type="password" class="formField" placeholder="Password"><br>
+        <input id="loginSubmit" type="button" value="Submit" onclick="login();"/>
+        <a class="loginLink" href="signup.html">Sign up</a><br>
+        <span id="loginError"></span>
+    </div>
+</div>
+
+
+</body>
+</html>

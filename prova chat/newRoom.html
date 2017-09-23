@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>New Room</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="functions.js"></script>
+    <script>
+        verifyAuth();
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <div class="headerButton" onclick="showHideMenu();">
+            <img id="toggleMenu" class="icon" src="img/icons/hide.svg"/>
+        </div>
+        <div id="userInfo">
+            <img id="profilePicture" class="icon profilePicutre" src="img/icons/profilePlacheholder.svg"/>
+            <a href="index.html"></a>
+            <img id="logout" class="icon"src="img/icons/logout.svg" onclick="performLogout();"/>
+        </div>
+    </div>
+    <div id="menu">
+        <a class="menuItem" href="index.html">Account</a>
+        <a class="menuItem " href="rooms.html">Rooms List</a>
+        <a class="menuItem selected" href="#">Create Room</a>
+    </div>
+    <div id="pageBody">
+        <div class="infoContainer">
+            <h1>Create new room</h1>
+            <div class="form">
+                Room Name<input id="inputNewRoom" placeholder="Room name"type="text"/>
+                <input type="button" onclick="createNewRoom();" value="Create"/><br>
+                <span id="newRoomError"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

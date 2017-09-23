@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Index</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src="functions.js"></script>
+    <script>
+        verifyAuth();
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo"></div>
+        <div class="headerButton" onclick="showHideMenu();">
+            <img id="toggleMenu" class="icon" src="img/icons/hide.svg"/>
+        </div>
+        <div id="userInfo">
+            <img id="profilePicture" class="icon profilePicutre" src="img/icons/profilePlacheholder.svg"/>
+            <a href="#"></a>
+            <img id="logout" class="icon"src="img/icons/logout.svg" onclick="performLogout();"/>
+        </div>
+    </div>
+    <div id="menu">
+        <a class="menuItem selected" href="#">Account</a>
+        <a class="menuItem" href="rooms.html">Rooms List</a>
+        <a class="menuItem" href="newRoom.html">Create Room</a>
+    </div>
+    <div id="pageBody">
+       <div class="infoContainer">
+        <h1>Account</h1>
+            <div class="form">
+               <img src="img/icons/accountImagePlaceholder.svg"/>
+               <div style="display: inline-block">
+                    <input id="inputUser" placeholder="User"type="text"/><br>
+                    <input id="inputFirstName" placeholder="First name"type="text"/><br>
+                    <input id="inputLastName" placeholder="Last name"type="text"/><br>
+                    <input id="inputEmail" placeholder="Last name"type="email"/><br>
+               </div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>
